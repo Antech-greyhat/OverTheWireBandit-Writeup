@@ -25,7 +25,10 @@ ls
 cat readme
 ```
 
-`ls` shows the files in the current directory. `cat readme` prints the file's contents, including the password needed for `bandit1`.
+| Command | Simple explanation |
+| --- | --- |
+| `ls` | List files in the current directory. |
+| `cat readme` | Print `readme`, which contains the password for `bandit1`. |
 
 ![Listing the directory and reading readme; all file output redacted](../assets/level-0/readme.png)
 

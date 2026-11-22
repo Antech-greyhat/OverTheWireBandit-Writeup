@@ -11,7 +11,12 @@ ls
 cat ./"--spaces in this filename--"
 ```
 
-The file is named `--spaces in this filename--`. Quotes keep the spaces inside one filename argument. The `./` prefix makes it a relative path, so its leading dashes are not treated as an option.
+| Command or part | Simple explanation |
+| --- | --- |
+| `ls` | List files to see the exact filename. |
+| `cat` | Print the selected file's contents. |
+| `./` | Start a relative path so the leading dashes are handled as part of a filename. |
+| `"--spaces in this filename--"` | Keep the spaces inside one filename argument. |
 
 The shell joins the unquoted `./` and quoted filename into one argument. `cat` opens that file and prints the password for `bandit3`.
 
