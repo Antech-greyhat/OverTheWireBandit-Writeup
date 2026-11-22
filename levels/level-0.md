@@ -42,7 +42,15 @@ The shell opens `readme` as standard input, and `cat` prints it. This reads the 
 
 ## Continue
 
-Save the recovered password privately. Run `exit`, then connect from your local terminal:
+Save the recovered password privately. Return to your local terminal with any of these options, tested in a Bandit SSH login shell:
+
+| Option | How to use it |
+| --- | --- |
+| `exit` | Type the command and press Enter to end the remote shell. |
+| `logout` | Type the command and press Enter in the SSH login shell. |
+| `Ctrl+D` | Press at an empty shell prompt to end the remote shell. |
+
+Then connect from your local terminal:
 
 ```bash
 ssh -p 2220 bandit1@bandit.labs.overthewire.org

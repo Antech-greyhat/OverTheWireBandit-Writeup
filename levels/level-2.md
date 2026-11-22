@@ -34,7 +34,15 @@ Some older walkthroughs show `spaces in this filename`. Use the exact name shown
 
 ## Continue
 
-Save the password privately, run `exit`, and connect from your local terminal:
+Save the password privately. Return to your local terminal with any of these options, tested in a Bandit SSH login shell:
+
+| Option | How to use it |
+| --- | --- |
+| `exit` | Type the command and press Enter to end the remote shell. |
+| `logout` | Type the command and press Enter in the SSH login shell. |
+| `Ctrl+D` | Press at an empty shell prompt to end the remote shell. |
+
+Then connect from your local terminal:
 
 ```bash
 ssh -p 2220 bandit3@bandit.labs.overthewire.org
