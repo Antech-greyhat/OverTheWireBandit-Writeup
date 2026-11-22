@@ -35,4 +35,4 @@ Related walkthroughs shared for this series:
 
 [level-1]: https://overthewire.org/wargames/bandit/bandit2.html
 
-[level-2]: https://overthewire.org/wargames/bandit/bandit3.html
+[level-2]: levels/level-2.md
