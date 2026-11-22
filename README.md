@@ -31,7 +31,7 @@ Related walkthroughs shared for this series:
 - [alt123 — Bandit Levels 0–15 on Medium](https://medium.com/@alt123/overthewire-bandit-levels-0-15-write-up-540713f011c4)
 - [rudransh-v — Bandit writeups on GitHub](https://github.com/rudransh-v/bandit-writeups)
 
-[level-0]: https://overthewire.org/wargames/bandit/bandit1.html
+[level-0]: levels/level-0.md
 
 [level-1]: https://overthewire.org/wargames/bandit/bandit2.html
 
