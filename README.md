@@ -22,14 +22,11 @@ Follow the [OverTheWire rules](https://overthewire.org/rules/). Keep recovered p
 
 Only cropped, permanently redacted screenshots are included. Solid blocks cover password output; the original captures stay outside this repository.
 
-## Credit and further reading
+See the [writeup rules](.github/rules.md) for the format, command tables, and checks to complete before committing.
+
+## Credit
 
 Bandit is created and hosted by the [OverTheWire community](https://overthewire.org/). The explanations here are original notes from my own sessions; official challenge descriptions and server banners are not reproduced.
-
-Related walkthroughs shared for this series:
-
-- [alt123 — Bandit Levels 0–15 on Medium](https://medium.com/@alt123/overthewire-bandit-levels-0-15-write-up-540713f011c4)
-- [rudransh-v — Bandit writeups on GitHub](https://github.com/rudransh-v/bandit-writeups)
 
 [level-0]: levels/level-0.md
 

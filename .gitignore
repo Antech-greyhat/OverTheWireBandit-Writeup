@@ -1,12 +1,4 @@
-# Disposable artifacts created while preparing these writeups.
-/.bandit-writeups-*/
-__pycache__/
-
-# Raw captures and private notes belong outside the published repository.
-**/Screenshot From *.png
-*.unredacted.png
-*.unredacted.jpg
-/screenshots-original/
-/private/
-/passwords.txt
-/passwords.md
+# Existing local assistant and credential configuration; keep out of commits.
+/.agents
+/.aws
+/.codex

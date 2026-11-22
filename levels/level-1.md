@@ -11,9 +11,12 @@ ls
 cat ./-
 ```
 
-`ls` shows a file named `-`. A bare `cat -` reads standard input, so it waits for keyboard input instead of opening that file.
+| Command | Simple explanation |
+| --- | --- |
+| `ls` | List the files, including the one named `-`. |
+| `cat ./-` | Open the file named `-` in the current directory and print its contents. |
 
-`./-` is a path: `./` means the current directory. Giving `cat` that path makes it open the actual file and print the password for `bandit2`.
+`./` means the current directory. A bare `cat -` reads standard input, so it waits for keyboard input instead of opening the file.
 
 ![Reading the dash-named file with cat ./-; password output redacted](../assets/level-1/dashed-filename.png)
 
