@@ -2,6 +2,16 @@
 
 **Session:** `bandit5` → `bandit6` · [Official challenge](https://overthewire.org/wargames/bandit/bandit6.html)
 
+## Level goal
+
+From the [official challenge page](https://overthewire.org/wargames/bandit/bandit6.html):
+
+> The password for the next level is stored in a file somewhere under the **inhere** directory and has all of the following properties:
+>
+> - human-readable
+> - 1033 bytes in size
+> - not executable
+
 ## Commands I used
 
 In the remote `bandit5` home directory:
