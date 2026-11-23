@@ -2,6 +2,12 @@
 
 **Session:** `bandit8` → `bandit9` · [Official challenge](https://overthewire.org/wargames/bandit/bandit9.html)
 
+## Level goal
+
+From the [official challenge page](https://overthewire.org/wargames/bandit/bandit9.html):
+
+> The password for the next level is stored in the file **data.txt** and is the only line of text that occurs only once
+
 ## Commands I used
 
 In the remote `bandit8` home directory:
