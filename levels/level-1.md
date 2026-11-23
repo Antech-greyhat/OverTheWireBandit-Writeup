@@ -2,6 +2,12 @@
 
 **Session:** `bandit1` → `bandit2` · [Official challenge](https://overthewire.org/wargames/bandit/bandit2.html)
 
+## Level goal
+
+From the [official challenge page](https://overthewire.org/wargames/bandit/bandit2.html):
+
+> The password for the next level is stored in a file called **-** located in the home directory
+
 Start in the remote `bandit1` home directory, using the password you recovered in Level 0.
 
 ## Commands I used
