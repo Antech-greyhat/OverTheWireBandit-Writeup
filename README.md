@@ -32,7 +32,7 @@ See the [writeup rules](.github/rules.md) for the format, command tables, and ch
 
 ## Credit
 
-Bandit is created and hosted by the [OverTheWire community](https://overthewire.org/). The explanations here are original notes from my own sessions; official challenge descriptions and server banners are not reproduced.
+Bandit is created and hosted by the [OverTheWire community](https://overthewire.org/). Each walkthrough quotes the official Level Goal with a link to its source; passwords are omitted. The explanations and solutions are original notes from my own sessions.
 
 [level-0]: levels/level-0.md
 
