@@ -8,8 +8,19 @@ Follow the [OverTheWire rules](https://overthewire.org/rules/). Credit the [Over
 2. Add a `## Level goal` section before the connection instructions or solution, quoting the complete official question as described below.
 3. Show the commands used in the actual session.
 4. Explain the commands in a short table. Break a long command into its useful parts.
-5. Add one working backup and a cropped screenshot with opaque password redaction.
-6. Show how to connect to the next account from the local terminal.
+5. Add one working backup and a short practical use case for the technique or tool.
+6. Include the relevant cropped screenshots in procedure order, with opaque credential redaction.
+7. Show how to connect to the next account from the local terminal, or state when the key login already reaches it.
+
+## Keep procedures clear
+
+- Label commands by where they run: local terminal, the current remote account, or a second remote session. Explain that `localhost` means the machine running the command.
+- From Level 13, highlight the network focus and explain the relevant SSH, Netcat, OpenSSL, or Nmap options in a short table. Keep broader tool examples in the shared guide.
+- Place each screenshot beside its matching step. Keep multiple captures in their original sequence, including the final account prompt when it confirms a key login.
+- Redact only credential-bearing portions: submitted and returned passwords, repeated passwords inside commands or job output, SSH private-key bodies, and TLS session secrets. Keep commands, paths, flags, key markers, ports, diff markers, and useful responses visible.
+- Export fresh opaque PNGs without embedded metadata. Preserve the original screenshots outside the repository.
+- If a capture skips a necessary step or contains a failed attempt, explain it clearly outside the official quotation. Confirm missing session steps with the author and label any completed or adapted commands.
+- Verify backups with harmless local examples when practical. State any required tool, file-format assumption, or Netcat version difference; distinguish those checks from the recorded Bandit session.
 
 ## Include the precise official question
 
@@ -70,7 +81,7 @@ Use the same format when a command returns a path, such as `/var/lib/dpkg/info/b
 - Keep `.gitignore` limited to local files or directories that actually exist. Keep raw screenshots and private notes outside the repository.
 - Check relative links and explain only commands that were used or verified.
 - Compare the quoted question against the current official Level Goal. Check the account transition, exact filenames, all conditions and tips, source attribution, and any explicitly marked password omission.
-- Review every exported screenshot. Replace password pixels with solid blocks, export a fresh image, and remove embedded text metadata.
+- Review every exported screenshot. Replace credential pixels with solid blocks, export a fresh image, remove embedded text metadata, and check repeated credential occurrences and multi-step ordering.
 - Put each newly solved level or update to an existing level in its own branch, commit, and PR, based on the repository's default branch. Stage only that level's files. Group repository-wide style or rule updates in a separate branch and PR. Include this trailer on each commit:
 
 ```text
