@@ -5,7 +5,7 @@ These tools support the focused network work starting at Level 13. SSH also carr
 | Tool | Use case here | Levels |
 | --- | --- | --- |
 | `ssh` | Log in with a key or run a single remote command. | 13, 16, 18; account logins throughout |
-| `nc` | Send a line to a TCP service, check a connection, or run a listener. | 14, 16 backup, 20 |
+| `nc` | Send lines to a TCP service, check a connection, or run a listener. | 14, 16 backup, 20, 24 |
 | `openssl` | Decode Base64 or inspect and communicate with a TLS service. | 10 backup, 15, 16 |
 | `nmap` | Discover open ports and identify their services. | 16 |
 
@@ -56,6 +56,14 @@ nc -zv -w 1 localhost 31000-32000 2>&1 | grep -E 'open|succeeded'
 The screenshots use `nc -l -p 4444`. Netcat variants have different flags; OpenBSD Netcat also supports `nc -l 4444`. Check `nc -h` on the machine where you run it.
 
 Practical uses include testing a line-based TCP service and observing a client's exchange with a listener. Level 20 needs both programs on the same Bandit server: the listener sends the current password and prints the client's returned password. Choose the same port for both.
+
+In the remote `bandit24` shell, stream all four-digit PINs through one connection:
+
+```bash
+for i in {0000..9999}; do echo "[current bandit24 password] $i"; done | nc localhost 30002 | grep -v "Wrong!"
+```
+
+Replace the placeholder privately with the current password. Bash preserves the four-digit padding. Placing `nc` after the completed loop sends every newline-terminated password/PIN pair through the same client; `grep -v` hides unsuccessful replies. The [Level 24 walkthrough](../levels/level-24.md) includes the recorded result and a backup using `seq` and `printf`.
 
 ## OpenSSL: Base64 and TLS
 

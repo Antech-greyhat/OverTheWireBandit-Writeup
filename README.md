@@ -31,6 +31,10 @@ The level number follows the account I start from. Level 0 includes the SSH setu
 | [Level 18][level-18] | `bandit18` → `bandit19` | Running a command over SSH |
 | [Level 19][level-19] | `bandit19` → `bandit20` | A setuid command helper |
 | [Level 20][level-20] | `bandit20` → `bandit21` | A TCP listener and setuid client |
+| [Level 21][level-21] | `bandit21` → `bandit22` | Following a cron job's output |
+| [Level 22][level-22] | `bandit22` → `bandit23` | Calculating a cron script's hashed filename |
+| [Level 23][level-23] | `bandit23` → `bandit24` | Submitting a shell script to cron |
+| [Level 24][level-24] | `bandit24` → `bandit25` | Streaming four-digit PINs over one TCP connection |
 
 Try the official challenge first, then open the relevant walkthrough when you need it. Further levels will be added after I solve them.
 
@@ -38,9 +42,11 @@ I solved each level using my own understanding and knowledge. These writeups rec
 
 ## Network work from Level 13
 
-From [Level 13][level-13], the walkthroughs focus on network authentication and services: SSH keys, plain TCP connections, TLS, port and service discovery, remote commands, and a listener/client exchange.
+From [Level 13][level-13], the walkthroughs introduce network authentication and services: SSH keys, plain TCP connections, TLS, port and service discovery, remote commands, and a listener/client exchange.
 
 SSH has carried the login sessions since Level 0. Level 13 starts the focused network work with key authentication; Levels 14–16 introduce the challenge services.
+
+Levels 21–23 follow scheduled cron jobs and their scripts on the Bandit server. [Level 24][level-24] returns to TCP services by sending all four-digit PINs over one connection.
 
 The [SSH, Netcat, OpenSSL, and Nmap guide](guides/ssh-nc-openssl-nmap.md) collects the commands used here, explains their options, and gives practical use cases.
 
@@ -99,3 +105,11 @@ Bandit is created and hosted by the [OverTheWire community](https://overthewire.
 [level-19]: levels/level-19.md
 
 [level-20]: levels/level-20.md
+
+[level-21]: levels/level-21.md
+
+[level-22]: levels/level-22.md
+
+[level-23]: levels/level-23.md
+
+[level-24]: levels/level-24.md
